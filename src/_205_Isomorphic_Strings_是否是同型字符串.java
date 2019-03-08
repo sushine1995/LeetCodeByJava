@@ -3,20 +3,20 @@ import java.util.Map;
 
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê9ÔÂ5ÈÕ ÉÏÎç11:17:57 
-* ÀàËµÃ÷ 
-* ²âÊÔÓÃÀı1
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´9æœˆ5æ—¥ ä¸Šåˆ11:17:57 
+* ç±»è¯´æ˜ 
+* æµ‹è¯•ç”¨ä¾‹1
 		String s ="egg";
 		String t = "odd";
-		²âÊÔÓÃÀı1
+		æµ‹è¯•ç”¨ä¾‹1
 		String s ="foo";
 		String t = "bar";
-				²âÊÔÓÃÀı1
+				æµ‹è¯•ç”¨ä¾‹1
 		String s ="foo";
 		String t = "bar";
 		
 */
-public class _205_Isomorphic_Strings_ÊÇ·ñÊÇÍ¬ĞÍ×Ö·û´® {
+public class _205_Isomorphic_Strings_æ˜¯å¦æ˜¯åŒå‹å­—ç¬¦ä¸² {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

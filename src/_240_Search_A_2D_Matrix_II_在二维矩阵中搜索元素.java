@@ -1,10 +1,10 @@
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê10ÔÂ15ÈÕ ÉÏÎç11:09:40 
-* ÀàËµÃ÷ 
-* Ë¼Â·1£º
-* 	ÏÈÌáÈ¡³ö¶Ô½ÇÏßÔªËØ£¬È·¶¨Ä¿±êÔªËØ¿ÉÄÜ³öÏÖµÄ·¶Î§£º
-* ±ÈÈç14£¬ÔÚ¶Ô½ÇÏßÔªËØÖÐ£¬9<14<17.ÄÇÃ´Ä¿±ê¿ÉÄÜ³öÏÖÔÚµÚÈýÅÅ9Ö®ºó£¬µÚËÄÅÅ17Ö®Ç°
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´10æœˆ15æ—¥ ä¸Šåˆ11:09:40 
+* ç±»è¯´æ˜Ž 
+* æ€è·¯1ï¼š
+* 	å…ˆæå–å‡ºå¯¹è§’çº¿å…ƒç´ ï¼Œç¡®å®šç›®æ ‡å…ƒç´ å¯èƒ½å‡ºçŽ°çš„èŒƒå›´ï¼š
+* æ¯”å¦‚14ï¼Œåœ¨å¯¹è§’çº¿å…ƒç´ ä¸­ï¼Œ9<14<17.é‚£ä¹ˆç›®æ ‡å¯èƒ½å‡ºçŽ°åœ¨ç¬¬ä¸‰æŽ’9ä¹‹åŽï¼Œç¬¬å››æŽ’17ä¹‹å‰
 
 * Pick One
 
@@ -23,7 +23,7 @@ Consider the following matrix:
 Given target = 5, return true.
 Given target = 20, return false.
 */
-public class _240_Search_A_2D_Matrix_II_ÔÚ¶þÎ¬¾ØÕóÖÐËÑË÷ÔªËØ {
+public class _240_Search_A_2D_Matrix_II_åœ¨äºŒç»´çŸ©é˜µä¸­æœç´¢å…ƒç´  {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -34,16 +34,16 @@ public class _240_Search_A_2D_Matrix_II_ÔÚ¶þÎ¬¾ØÕóÖÐËÑË÷ÔªËØ {
     	if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
     		return false;
 		}
-    	//´ÓmatrixµÄÓÒÉÏ½Ç¿ªÊ¼±È½Ï
-    	int col = matrix[0].length-1;	//ÁÐ
-    	int row = 0;					//ÐÐ
+    	//ä»Žmatrixçš„å³ä¸Šè§’å¼€å§‹æ¯”è¾ƒ
+    	int col = matrix[0].length-1;	//åˆ—
+    	int row = 0;					//è¡Œ
     	while(col>=0 && row<matrix.length) {
     		if(target == matrix[row][col])
     			return true;
-    		//±ÈÐÐ×î´óÖµ´óÊ±£¬ÇÐ»»µ½ÏÂÒ»ÐÐ
+    		//æ¯”è¡Œæœ€å¤§å€¼å¤§æ—¶ï¼Œåˆ‡æ¢åˆ°ä¸‹ä¸€è¡Œ
     		else if(target > matrix[row][col])
     			row++;
-    		//±ÈÐÐ×î´óÖµÐ¡Ê±£¬Ïñ×óÒÆ¶¯
+    		//æ¯”è¡Œæœ€å¤§å€¼å°æ—¶ï¼Œåƒå·¦ç§»åŠ¨
     		else //if(target < matrix[row][col])
     			col--;
     	}
@@ -53,7 +53,7 @@ public class _240_Search_A_2D_Matrix_II_ÔÚ¶þÎ¬¾ØÕóÖÐËÑË÷ÔªËØ {
     	
     }
     /*
-     * µÝ¹éÐ´·¨£º
+     * é€’å½’å†™æ³•ï¼š
      public boolean searchMatrix(int[][] matrix, int target) {
         if (matrix == null || matrix.length == 0) {
             return false;

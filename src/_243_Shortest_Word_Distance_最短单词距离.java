@@ -1,7 +1,7 @@
 
 /**
  * @author suzw
- * @version ´´½¨Ê±¼ä£º2018Äê10ÔÂ22ÈÕ ÏÂÎç1:17:15 ÀàËµÃ÷
+ * @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´10æœˆ22æ—¥ ä¸‹åˆ1:17:15 ç±»è¯´æ˜
  * 
  *          Given a list of words and two words word1 and word2, return the
  *          shortest distance between these two words in the list.
@@ -9,13 +9,13 @@
  *          For example, Assume that words = ["practice", "makes", "perfect",
  *          "coding", "makes"].
  * 
- *          Given word1 = ¡°coding¡±, word2 = ¡°practice¡±, return 3. Given word1 =
+ *          Given word1 = â€œcodingâ€, word2 = â€œpracticeâ€, return 3. Given word1 =
  *          "makes", word2 = "coding", return 1.
  * 
  *          Note: You may assume that word1 does not equal to word2, and word1
  *          and word2 are both in the list.
  */
-public class _243_Shortest_Word_Distance_×î¶Ìµ¥´Ê¾àÀë {
+public class _243_Shortest_Word_Distance_æœ€çŸ­å•è¯è·ç¦» {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -46,7 +46,7 @@ public class _243_Shortest_Word_Distance_×î¶Ìµ¥´Ê¾àÀë {
 			
 			if (string.equals(word1)) {
 				p1= i;
-				//¿ÉÒÔ±ÜÃâp2ºÍp2Ã»ÓĞÍê³É³õÊ¼ÖµÊ±£¬math.absÔ½½ç£¬µ¼ÖÂÊä³ö-2147483647µÄÇé¿ö£¬Integer.MIN_VALUE
+				//å¯ä»¥é¿å…p2å’Œp2æ²¡æœ‰å®Œæˆåˆå§‹å€¼æ—¶ï¼Œmath.absè¶Šç•Œï¼Œå¯¼è‡´è¾“å‡º-2147483647çš„æƒ…å†µï¼ŒInteger.MIN_VALUE
 				if(p2 !=Integer.MIN_VALUE)
 					ans = Math.min(ans, Math.abs((p2-p1)));
 				System.out.println(word1 + ":"+p1+":"+ans);

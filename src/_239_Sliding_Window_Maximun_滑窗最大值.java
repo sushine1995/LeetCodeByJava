@@ -2,8 +2,8 @@
 
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê10ÔÂ16ÈÕ ÉÏÎç10:44:46 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´10æœˆ16æ—¥ ä¸Šåˆ10:44:46 
+* ç±»è¯´æ˜ 
 * Given an array nums, there is a sliding window of size k which is moving from the very left of the array to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position. Return the max sliding window.
 Example:
 Input: nums = [1,3,-1,-3,5,3,6,7], and k = 3
@@ -19,11 +19,11 @@ Window position                Max
  1  3  -1  -3 [5  3  6] 7       6
  1  3  -1  -3  5 [3  6  7]      7
 Note: 
-You may assume k is always valid, 1 ¡Ü k ¡Ü input array's size for non-empty array.
+You may assume k is always valid, 1 â‰¤ k â‰¤ input array's size for non-empty array.
 Follow up:
 Could you solve it in linear time?
 */
-public class _239_Sliding_Window_Maximun_»¬´°×î´óÖµ {
+public class _239_Sliding_Window_Maximun_æ»‘çª—æœ€å¤§å€¼ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -31,7 +31,7 @@ public class _239_Sliding_Window_Maximun_»¬´°×î´óÖµ {
 	}
 	
 	public static int[] maxSlidingWindow(int[] nums, int k) {
-		//²»ÖªµÀÄÄ¸öÉµ×ÓÌá½»ÁË ¡°¿Õ¼¯ºÏ£¬K=0¡±µÄ²âÊÔÓÃÀı£¬leetcode»¹Í¨¹ıÁË
+		//ä¸çŸ¥é“å“ªä¸ªå‚»å­æäº¤äº† â€œç©ºé›†åˆï¼ŒK=0â€çš„æµ‹è¯•ç”¨ä¾‹ï¼Œleetcodeè¿˜é€šè¿‡äº†
 		  if(nums.length == 0) return new int[0];
         int[] ans = new int[nums.length-k+1];
         

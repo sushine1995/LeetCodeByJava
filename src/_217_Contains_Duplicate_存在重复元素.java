@@ -5,8 +5,8 @@ import java.util.Set;
 
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê9ÔÂ13ÈÕ ÏÂÎç2:50:53 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´9æœˆ13æ—¥ ä¸‹åˆ2:50:53 
+* ç±»è¯´æ˜ 
 * Given an array of integers, find if the array contains any duplicates.
 Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.
 Example 1:
@@ -19,7 +19,7 @@ Example 3:
 Input: [1,1,1,3,3,4,3,2,4,2]
 Output: true
 */
-public class _217_Contains_Duplicate_´æÔÚÖØ¸´ÔªËØ {
+public class _217_Contains_Duplicate_å­˜åœ¨é‡å¤å…ƒç´  {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

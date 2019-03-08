@@ -4,8 +4,8 @@
 
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê5ÔÂ30ÈÕ ÉÏÎç11:03:24 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´5æœˆ30æ—¥ ä¸Šåˆ11:03:24 
+* ç±»è¯´æ˜ 
 * 104. Maximum Depth of Binary Tree
 * Given a binary tree, find its maximum depth.
 The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
@@ -19,7 +19,7 @@ Given binary tree [3,9,20,null,null,15,7],
    15   7
 return its depth = 3.
 */
-public class _102_MaxinumDepthOfBinaryTree_¶ş²æÊ÷µÄ×î´óÉî¶È {
+public class _102_MaxinumDepthOfBinaryTree_äºŒå‰æ ‘çš„æœ€å¤§æ·±åº¦ {
 	class TreeNode {
 	    int val;
 	     TreeNode left;
@@ -32,7 +32,7 @@ public class _102_MaxinumDepthOfBinaryTree_¶ş²æÊ÷µÄ×î´óÉî¶È {
 
 	}
 	
-	//Ê¹ÓÃµİ¹é
+	//ä½¿ç”¨é€’å½’
     public static int maxDepth(TreeNode root) {
         if(root == null){
             return 0;
@@ -40,7 +40,7 @@ public class _102_MaxinumDepthOfBinaryTree_¶ş²æÊ÷µÄ×î´óÉî¶È {
         
         return Math.max(maxDepth(root.left),maxDepth(root.right)) + 1;
     }
-	//·½·¨1£ººÍday15-Çó¶ş²æÊ÷Ã¿²ãµÄÆ½¾ùÊıÏàËÆ
+	//æ–¹æ³•1ï¼šå’Œday15-æ±‚äºŒå‰æ ‘æ¯å±‚çš„å¹³å‡æ•°ç›¸ä¼¼
     /*
     public int maxDepth(TreeNode root) {
     	

@@ -1,9 +1,9 @@
 
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê10ÔÂ19ÈÕ ÏÂÎç7:26:55 
-* ÀàËµÃ÷ 
-* ²»ÄÜ¼òµ¥µÄÊ¹ÓÃÒì»ò²Ù×÷£º "aa" "bb"
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´10æœˆ19æ—¥ ä¸‹åˆ7:26:55 
+* ç±»è¯´æ˜ 
+* ä¸èƒ½ç®€å•çš„ä½¿ç”¨å¼‚æˆ–æ“ä½œï¼š "aa" "bb"
 * 
 */
 public class _242_Valid_Anagram_ {
@@ -27,9 +27,9 @@ public class _242_Valid_Anagram_ {
 			count[tc[i] - 'a']--;
 		}
 	     System.out.println(System.currentTimeMillis()-start0);
-	     //Ê¹ÓÃ¼ÓÇ¿forÑ­»·£¬ËÙ¶È¸ü¿ì2ms?? ÎªÊ²Ã´£¬Ã÷Ã÷ÊÇÓÃ»§ÆÕÍ¨Êı×é
-	     //ÔöÇ¿forÑ­»·¸üÊ¹ÓÃÓÚÁ´±íÀàµÄÊı¾İ½á¹¹£¬ÈçList a = new LinkedList()
-	     //ÆÕÍ¨Ñ­»·¸üÊÊÓÃÓÚË³Ğò´æ´¢£¬ÈçList a = ArrayList()
+	     //ä½¿ç”¨åŠ å¼ºforå¾ªç¯ï¼Œé€Ÿåº¦æ›´å¿«2ms?? ä¸ºä»€ä¹ˆï¼Œæ˜æ˜æ˜¯ç”¨æˆ·æ™®é€šæ•°ç»„
+	     //å¢å¼ºforå¾ªç¯æ›´ä½¿ç”¨äºé“¾è¡¨ç±»çš„æ•°æ®ç»“æ„ï¼Œå¦‚List a = new LinkedList()
+	     //æ™®é€šå¾ªç¯æ›´é€‚ç”¨äºé¡ºåºå­˜å‚¨ï¼Œå¦‚List a = ArrayList()
 	     long start = System.currentTimeMillis();
 	     for (int i : sc) {
 			count[i - 'a']++;

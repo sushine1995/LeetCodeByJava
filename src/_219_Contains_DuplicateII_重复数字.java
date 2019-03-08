@@ -5,8 +5,8 @@ import java.util.Set;
 
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê9ÔÂ13ÈÕ ÏÂÎç4:44:52 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´9æœˆ13æ—¥ ä¸‹åˆ4:44:52 
+* ç±»è¯´æ˜ 
 * Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that nums[i] = nums[j] and the absolute difference between i and j is at most k.
 Example 1:
 Input: nums = [1,2,3,1], k = 3
@@ -18,7 +18,7 @@ Example 3:
 Input: nums = [1,2,3,1,2,3], k = 2
 Output: false
 */
-public class _219_Contains_DuplicateII_ÖØ¸´Êı×Ö {
+public class _219_Contains_DuplicateII_é‡å¤æ•°å­— {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

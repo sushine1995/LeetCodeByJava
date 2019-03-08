@@ -2,10 +2,10 @@ import java.util.Arrays;
 
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê9ÔÂ13ÈÕ ÏÂÎç8:41:27 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´9æœˆ13æ—¥ ä¸‹åˆ8:41:27 
+* ç±»è¯´æ˜ 
 */
-public class _220_Contains_Duplicate_III_ÖØ¸´Êı×Ö {
+public class _220_Contains_Duplicate_III_é‡å¤æ•°å­— {
 	public static void main(String[] args) {
 		int[] nums = {-Integer.MAX_VALUE,Integer.MAX_VALUE};
 		//System.out.println(Math.abs((double)(Integer.MAX_VALUE+1)));
@@ -16,7 +16,7 @@ public class _220_Contains_Duplicate_III_ÖØ¸´Êı×Ö {
 			if(nums.length<2||k<1||t<0) return false;
 			ValuePosPair[] valPosArr = new ValuePosPair[nums.length];
 			for(int i =0;i<nums.length;i++) valPosArr[i] = new ValuePosPair(nums[i],i); 
-			//ÏÈ½«Êı¾İ½øĞĞÅÅĞò£¬ÄÜ¼Ó¿ìËÙ¶È
+			//å…ˆå°†æ•°æ®è¿›è¡Œæ’åºï¼Œèƒ½åŠ å¿«é€Ÿåº¦
 			Arrays.sort(valPosArr);	
 			for(int i=0;i<valPosArr.length;i++){
 				for(int j=i+1;j<valPosArr.length&&((long)valPosArr[j].val-(long)valPosArr[i].val<=(long)t);j++){
@@ -27,7 +27,7 @@ public class _220_Contains_Duplicate_III_ÖØ¸´Êı×Ö {
 		}  
 		 
 		 /*
-		  * ¸Ã·½·¨TimeLimited
+		  * è¯¥æ–¹æ³•TimeLimited
 		 for (int i = 0; i < nums.length; i++) {
 			 for (int j = i+1; j < nums.length && j<=i+k; j++) {
 				 if (Math.abs(((long)nums[j]-(long)nums[i]))<=t) {

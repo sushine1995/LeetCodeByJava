@@ -3,8 +3,8 @@ import java.util.Map;
 
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê10ÔÂ31ÈÕ ÏÂÎç8:37:55 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´10æœˆ31æ—¥ ä¸‹åˆ8:37:55 
+* ç±»è¯´æ˜ 
 * Given a pattern and a string str, find if str follows the same pattern.
 
 Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty word in str.
@@ -28,7 +28,7 @@ Output: false
 Notes:
 You may assume pattern contains only lowercase letters, and str contains lowercase letters separated by a single space.
 */
-public class _290_Word_Pattern_µ¥´Ê¸ñÊ½Æ¥Åä {
+public class _290_Word_Pattern_å•è¯æ ¼å¼åŒ¹é… {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

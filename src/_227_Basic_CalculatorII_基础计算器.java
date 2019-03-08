@@ -2,8 +2,8 @@ import java.util.Stack;
 
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê9ÔÂ21ÈÕ ÉÏÎç9:07:52 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´9æœˆ21æ—¥ ä¸Šåˆ9:07:52 
+* ç±»è¯´æ˜ 
 * * Implement a basic calculator to evaluate a simple expression string.
 The expression string contains only non-negative integers, +, -, *, / operators and empty spaces . The integer division should truncate toward zero.
 Example 1:
@@ -19,7 +19,7 @@ Note:
 You may assume that the given expression is always valid.
 Do not use the eval built-in library function.
 */
-public class _227_Basic_CalculatorII_»ù´¡¼ÆËãÆ÷ {
+public class _227_Basic_CalculatorII_åŸºç¡€è®¡ç®—å™¨ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -41,7 +41,7 @@ public class _227_Basic_CalculatorII_»ù´¡¼ÆËãÆ÷ {
 			if(Character.isDigit(sChars[i])) {
 				num = num*10 + sChars[i]-'0';
 			}
-			//ÕÒµ½ÔËËã·ûÊ±£¬»òÕßµ½½áÎ²£¬ÓëÏÂÒ»¾äµÄ½á¹û²»Í¬£º
+			//æ‰¾åˆ°è¿ç®—ç¬¦æ—¶ï¼Œæˆ–è€…åˆ°ç»“å°¾ï¼Œä¸ä¸‹ä¸€å¥çš„ç»“æœä¸åŒï¼š
 			//else if (' '!=sChars[i] || i==len -1) {
 			if ((!Character.isDigit(sChars[i]) && ' '!=sChars[i] )|| i==len -1) {
 				

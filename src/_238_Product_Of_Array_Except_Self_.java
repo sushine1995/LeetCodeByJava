@@ -1,7 +1,7 @@
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê10ÔÂ15ÈÕ ÉÏÎç10:18:36 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´10æœˆ15æ—¥ ä¸Šåˆ10:18:36 
+* ç±»è¯´æ˜Ž 
 * 
 Given an array nums of n integers where n > 1,  return an array output such that output[i] is 
 equal to the product of all the elements of nums except nums[i].
@@ -20,18 +20,18 @@ public class _238_Product_Of_Array_Except_Self_ {
      
     	int[] ans = new int[nums.length];
     	ans[0] = 1;
-    	//ÏÈ¼ÆËãnums[i]×ó²àÔªËØµÄ³Ë»ý£¬´æ´¢ÔÚans[i]ÖÐ
+    	//å…ˆè®¡ç®—nums[i]å·¦ä¾§å…ƒç´ çš„ä¹˜ç§¯ï¼Œå­˜å‚¨åœ¨ans[i]ä¸­
     	for (int i = 1; i < nums.length; i++) {
 			ans[i] = ans[i-1] * nums[i-1];
 		}
     	int right = 1;
-    	//ÔÙ¼ÆËãnums[i]ÓÒ²àµÄÔªËØ³Ë»ý£¬²¢½«×ó²àºÍÓÒ²à³Ë»ýÏà³Ë£¬¾ÍÊÇËùÐèÒªµÄ½á¹û
+    	//å†è®¡ç®—nums[i]å³ä¾§çš„å…ƒç´ ä¹˜ç§¯ï¼Œå¹¶å°†å·¦ä¾§å’Œå³ä¾§ä¹˜ç§¯ç›¸ä¹˜ï¼Œå°±æ˜¯æ‰€éœ€è¦çš„ç»“æžœ
     	for (int i = nums.length -1; i >=0; i--) {
 			ans[i] *= right;
 			right *=nums[i];
 			
 		}
-    	/*ÒÔÉÏÈý¾äÒ²¿ÉÒÔÐ´³É£º
+    	/*ä»¥ä¸Šä¸‰å¥ä¹Ÿå¯ä»¥å†™æˆï¼š
 		 * 
 		 * for (int i = nums.length -2; i >=0; i--) {
 			ans[i] *= ans[i+1]*right;

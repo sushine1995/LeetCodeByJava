@@ -4,10 +4,10 @@ import java.util.LinkedList;
 
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê9ÔÂ18ÈÕ ÏÂÎç5:05:29 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´9æœˆ18æ—¥ ä¸‹åˆ5:05:29 
+* ç±»è¯´æ˜ 
 */
-public class _222_Count_Complete_Tree_Nodes_ÍêÈ«¶ş²æÊ÷µÄ½Úµã¸öÊı {
+public class _222_Count_Complete_Tree_Nodes_å®Œå…¨äºŒå‰æ ‘çš„èŠ‚ç‚¹ä¸ªæ•° {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -36,9 +36,9 @@ public class _222_Count_Complete_Tree_Nodes_ÍêÈ«¶ş²æÊ÷µÄ½Úµã¸öÊı {
     }
 	/*
 	 * 
-	 * µ±µİ¹é×ª»¯ÎªÑ­»·ÇÒ¸ÃÑ­»·²¢²»ĞèÒªÊ¹ÓÃÕ»ÕâÖÖÊı¾İ½á¹¹Ê±£¬
-	 * ĞÔÄÜÍùÍù»áµÃµ½ÖÊµÄ·ÉÔ¾¡£ÔÚÉÏÃæµÄË¼Â·¶şÖĞ²ÉÓÃµİ¹é£¬ÔÚÕâÀïÎÒÃÇ½«µİ¹é×ª±äÎªÑ­»·¡£
-	 * Í¬Ê±ÎÒÃÇÖ»ĞèÒª¼ÆËãÒ»´ÎÊ÷µÄ¸ß¶È£¬ÒòÎªÃ¿Ò»´ÎÑ¡ÔñµÄ×ÓÊ÷µÄ¸ß¶È¶¼ÊÇÉÏÒ»¸ö¸ß¶È-1¡£
+	 * å½“é€’å½’è½¬åŒ–ä¸ºå¾ªç¯ä¸”è¯¥å¾ªç¯å¹¶ä¸éœ€è¦ä½¿ç”¨æ ˆè¿™ç§æ•°æ®ç»“æ„æ—¶ï¼Œ
+	 * æ€§èƒ½å¾€å¾€ä¼šå¾—åˆ°è´¨çš„é£è·ƒã€‚åœ¨ä¸Šé¢çš„æ€è·¯äºŒä¸­é‡‡ç”¨é€’å½’ï¼Œåœ¨è¿™é‡Œæˆ‘ä»¬å°†é€’å½’è½¬å˜ä¸ºå¾ªç¯ã€‚
+	 * åŒæ—¶æˆ‘ä»¬åªéœ€è¦è®¡ç®—ä¸€æ¬¡æ ‘çš„é«˜åº¦ï¼Œå› ä¸ºæ¯ä¸€æ¬¡é€‰æ‹©çš„å­æ ‘çš„é«˜åº¦éƒ½æ˜¯ä¸Šä¸€ä¸ªé«˜åº¦-1ã€‚
 	 */
 	int height2(TreeNode root){
         if(root==null) return -1;
@@ -65,13 +65,13 @@ public class _222_Count_Complete_Tree_Nodes_ÍêÈ«¶ş²æÊ÷µÄ½Úµã¸öÊı {
     
     
 	/*
-	 * ¸Ã·½·¨³¬Ê±
+	 * è¯¥æ–¹æ³•è¶…æ—¶
 	 */
 	public static int countNodes_bak(TreeNode root) {
 		
 		if (root == null)  return 0;
 		int num = 1;
-		//Ö±½Óreturn±ÈÏÂÃæµÄÂıÒ»Ğ©
+		//ç›´æ¥returnæ¯”ä¸‹é¢çš„æ…¢ä¸€äº›
 		//return 1+countNodes(root.left)+countNodes(root.right);
 		
 		if (root.left!= null) {

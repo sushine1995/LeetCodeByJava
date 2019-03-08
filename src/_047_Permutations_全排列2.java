@@ -5,8 +5,8 @@ import java.util.List;
 
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê9ÔÂ12ÈÕ ÏÂÎç6:52:17 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´9æœˆ12æ—¥ ä¸‹åˆ6:52:17 
+* ç±»è¯´æ˜ 
 * Given a collection of numbers that might contain duplicates, return all possible unique permutations.
 Example:
 Input: [1,1,2]
@@ -17,7 +17,7 @@ Output:
   [2,1,1]
 ]
 */
-public class _047_Permutations_È«ÅÅÁĞ2 {
+public class _047_Permutations_å…¨æ’åˆ—2 {
 	public static void main(String[] args) {
 		int[] nums = {1,1,3};
 		System.out.println(permuteUnique(nums));
@@ -30,15 +30,15 @@ public class _047_Permutations_È«ÅÅÁĞ2 {
         return res;
     }
     
-	//Ê¹ÓÃBackTracking
+	//ä½¿ç”¨BackTracking
     public static void helper(int[] nums, List<List<Integer>> res, List<Integer> list, boolean[] used) {
         if (list.size() == nums.length) {
             res.add(new ArrayList<Integer>(list));
         }
         
         for (int i = 0; i < nums.length; i++) {
-        	//µ±used[i-1]=0²¢ÇÒnums[i]=nums[i-1]£¬i>0Ê±
-        	//µ±used[i] = 1ÒÑ·ÃÎÊ
+        	//å½“used[i-1]=0å¹¶ä¸”nums[i]=nums[i-1]ï¼Œi>0æ—¶
+        	//å½“used[i] = 1å·²è®¿é—®
             if (used[i] || i > 0 && nums[i] == nums[i-1] && !used[i - 1]) continue;
             list.add(nums[i]);
             used[i] = true;
@@ -57,14 +57,14 @@ public class _047_Permutations_È«ÅÅÁĞ2 {
 		return reBackNums(list, nums);
 	}
 	public static void backtracking(List<List<Integer>> list,List<Integer> tempList,int[] newNums) {
-		if (tempList.size() == newNums.length) {//ÒÑ½«È«²¿ÊıÑ¡³ö£¬Âú×ãÌõ¼ş¼ÓÈë½á¹û¼¯£¬½áÊøµİ¹é
+		if (tempList.size() == newNums.length) {//å·²å°†å…¨éƒ¨æ•°é€‰å‡ºï¼Œæ»¡è¶³æ¡ä»¶åŠ å…¥ç»“æœé›†ï¼Œç»“æŸé€’å½’
 			list.add(new ArrayList<>(tempList));
 		}else {
 			for (int i = 0; i < newNums.length; i++) {
-				if (!tempList.contains(newNums[i])) {// ÒÑ¾­Ñ¡¹ıµÄÊı²»ÔÙÑ¡
-					tempList.add(newNums[i]); //Ñ¡Ôñµ±Ç°½Úµã
+				if (!tempList.contains(newNums[i])) {// å·²ç»é€‰è¿‡çš„æ•°ä¸å†é€‰
+					tempList.add(newNums[i]); //é€‰æ‹©å½“å‰èŠ‚ç‚¹
 					backtracking(list, tempList, newNums);
-					tempList.remove(tempList.size()-1);//»ØËİµ½ÉÏÒ»²½£¬È¥µôµ±Ç°½Úµã
+					tempList.remove(tempList.size()-1);//å›æº¯åˆ°ä¸Šä¸€æ­¥ï¼Œå»æ‰å½“å‰èŠ‚ç‚¹
 				}
 			}
 		}

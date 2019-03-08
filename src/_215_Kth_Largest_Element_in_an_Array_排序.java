@@ -2,8 +2,8 @@ import java.util.Arrays;
 
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê9ÔÂ12ÈÕ ÏÂÎç4:31:52 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´9æœˆ12æ—¥ ä¸‹åˆ4:31:52 
+* ç±»è¯´æ˜ 
 * Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
 Example 1:
 Input: [3,2,1,5,6,4] and k = 2
@@ -12,9 +12,9 @@ Example 2:
 Input: [3,2,3,1,2,4,5,5,6] and k = 4
 Output: 4
 Note: 
-You may assume k is always valid, 1 ¡Ü k ¡Ü array's length.
+You may assume k is always valid, 1 â‰¤ k â‰¤ array's length.
 */
-public class _215_Kth_Largest_Element_in_an_Array_ÅÅĞò {
+public class _215_Kth_Largest_Element_in_an_Array_æ’åº {
 
 	public static void main(String[] args) {
 		

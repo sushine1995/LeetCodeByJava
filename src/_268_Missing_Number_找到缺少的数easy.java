@@ -1,6 +1,6 @@
 /**
  * @author suzw
- * @version ´´½¨Ê±¼ä£º2018Äê10ÔÂ26ÈÕ ÏÂÎç1:00:01 ÀàËµÃ÷ Given an array containing n distinct
+ * @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´10æœˆ26æ—¥ ä¸‹åˆ1:00:01 ç±»è¯´æ˜ Given an array containing n distinct
  *          numbers taken from 0, 1, 2, ..., n, find the one that is missing
  *          from the array.
  * 
@@ -13,7 +13,7 @@
  *          Could you implement it using only
  *          constant extra space complexity?
  */
-public class _268_Missing_Number_ÕÒµ½È±ÉÙµÄÊıeasy {
+public class _268_Missing_Number_æ‰¾åˆ°ç¼ºå°‘çš„æ•°easy {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

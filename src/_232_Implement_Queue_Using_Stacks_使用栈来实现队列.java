@@ -2,8 +2,8 @@ import java.util.Stack;
 
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê9ÔÂ20ÈÕ ÉÏÎç10:44:38 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´9æœˆ20æ—¥ ä¸Šåˆ10:44:38 
+* ç±»è¯´æ˜ 
 * Implement the following operations of a queue using stacks.
 push(x) -- Push element x to the back of queue.
 pop() -- Removes the element from in front of queue.
@@ -25,7 +25,7 @@ a list or deque (double-ended queue), as long as you use only standard operation
 You may assume that all operations are valid (for example, no pop or peek operations will be called 
 on an empty queue).
 */
-public class _232_Implement_Queue_Using_Stacks_Ê¹ÓÃÕ»À´ÊµÏÖ¶ÓÁĞ {
+public class _232_Implement_Queue_Using_Stacks_ä½¿ç”¨æ ˆæ¥å®ç°é˜Ÿåˆ— {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -39,12 +39,9 @@ public class _232_Implement_Queue_Using_Stacks_Ê¹ÓÃÕ»À´ÊµÏÖ¶ÓÁĞ {
 	    public MyQueue() {
 	        stack1=new Stack<Integer>();
 	        stack2=new Stack<Integer>();
-	        
 	    }
-	    
 	    /** Push element x to the back of queue. */
 	    public void push(int x) {
-	       
 	        if(stack1.isEmpty()){
 	            stack1.push(x);
 	        }else{
@@ -89,16 +86,10 @@ public class _232_Implement_Queue_Using_Stacks_Ê¹ÓÃÕ»À´ÊµÏÖ¶ÓÁĞ {
 	    
 	    /** Push element x to the back of queue. */
 	    public void push(int x) {
-	    	/*
-	    	while (!stackOut.isEmpty()) {
-				stackIn.push(stackOut.pop());
-			}
-			*/
 	        stackIn.push(x);
 	    }
 	    
 	    /** Removes the element from in front of queue and returns that element. */
-	    
 	    public int pop() {
 	    	peek();
 	        return (int) stackOut.pop();

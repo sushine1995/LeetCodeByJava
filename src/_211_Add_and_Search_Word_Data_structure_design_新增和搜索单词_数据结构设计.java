@@ -5,9 +5,9 @@ import java.util.Map;
 
 /**
  * @author suzw
- * @version ´´½¨Ê±¼ä£º2018Äê9ÔÂ11ÈÕ ÏÂÎç3:22:52 ÀàËµÃ÷
+ * @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´9æœˆ11æ—¥ ä¸‹åˆ3:22:52 ç±»è¯´æ˜
  */
-public class _211_Add_and_Search_Word_Data_structure_design_ĞÂÔöºÍËÑË÷µ¥´Ê_Êı¾İ½á¹¹Éè¼Æ {
+public class _211_Add_and_Search_Word_Data_structure_design_æ–°å¢å’Œæœç´¢å•è¯_æ•°æ®ç»“æ„è®¾è®¡ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -22,8 +22,8 @@ public class _211_Add_and_Search_Word_Data_structure_design_ĞÂÔöºÍËÑË÷µ¥´Ê_Êı¾İ½
 /*
 
 *@author: suzw
-*@date: 2018Äê9ÔÂ11ÈÕÏÂÎç4:47:15
-* ·½·¨1£º ¸ù¾İÃ¿¸öwordµÄ³¤¶È£¬½¨Á¢list£¬½«ÏàÍ¬³¤¶ÈµÄword·ÅÔÚÍ¬Ò»¸ölistÖĞ¡£ ±È·½·¨2¸ü¿ì
+*@date: 2018å¹´9æœˆ11æ—¥ä¸‹åˆ4:47:15
+* æ–¹æ³•1ï¼š æ ¹æ®æ¯ä¸ªwordçš„é•¿åº¦ï¼Œå»ºç«‹listï¼Œå°†ç›¸åŒé•¿åº¦çš„wordæ”¾åœ¨åŒä¸€ä¸ªlistä¸­ã€‚ æ¯”æ–¹æ³•2æ›´å¿«
 */
 
 class WordDictionary {
@@ -67,8 +67,8 @@ class WordDictionary {
 /*
 
 *@author: suzw
-*@date: 2018Äê9ÔÂ11ÈÕÏÂÎç4:30:56
-*@·½·¨2ÀàËÆ208£¬Ê¹ÓÃTrieNode£¬Ïà¶Ô·½·¨1¸ü·ÑÊ±
+*@date: 2018å¹´9æœˆ11æ—¥ä¸‹åˆ4:30:56
+*@æ–¹æ³•2ç±»ä¼¼208ï¼Œä½¿ç”¨TrieNodeï¼Œç›¸å¯¹æ–¹æ³•1æ›´è´¹æ—¶
 */
 
 class WordDictionary2 {

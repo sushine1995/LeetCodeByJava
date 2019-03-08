@@ -5,10 +5,10 @@ import java.util.Map;
 
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê10ÔÂ18ÈÕ ÏÂÎç4:51:26 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´10æœˆ18æ—¥ ä¸‹åˆ4:51:26 
+* ç±»è¯´æ˜ 
 */
-public class _241_Different_Ways_To_Add_Parentheses_ÔËËã±í´ïÊ½µÄ²»Í¬×éºÏ½á¹û {
+public class _241_Different_Ways_To_Add_Parentheses_è¿ç®—è¡¨è¾¾å¼çš„ä¸åŒç»„åˆç»“æœ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -31,7 +31,7 @@ public class _241_Different_Ways_To_Add_Parentheses_ÔËËã±í´ïÊ½µÄ²»Í¬×éºÏ½á¹û {
 				}
 				  else {
 					  left = helper(leftString,map);
-					  //Memorization,Ã¿´Î¼ÆËãºóÌí¼Óµ½mapÖĞ£¬¼õÉÙÖØ¸´ÔËËã
+					  //Memorization,æ¯æ¬¡è®¡ç®—åæ·»åŠ åˆ°mapä¸­ï¼Œå‡å°‘é‡å¤è¿ç®—
 					  map.put(leftString, left);
 				  }
 				  
@@ -61,11 +61,11 @@ public class _241_Different_Ways_To_Add_Parentheses_ÔËËã±í´ïÊ½µÄ²»Í¬×éºÏ½á¹û {
 			  }
 			  
 		}
-		  //µ±·Ö¸îµ½×îºóÒ»¸öÊı×ÖÊ±£¬
+		  //å½“åˆ†å‰²åˆ°æœ€åä¸€ä¸ªæ•°å­—æ—¶ï¼Œ
 		  if(res.size() == 0) {
 			  res.add(Integer.valueOf(input));
 		  }
-		 //¿ÉÒÔ²»Òª
+		 //å¯ä»¥ä¸è¦
 		  map.put(input, res);
 		  return res;
 		

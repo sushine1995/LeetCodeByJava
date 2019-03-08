@@ -1,7 +1,7 @@
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê9ÔÂ18ÈÕ ÏÂÎç4:10:22 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´9æœˆ18æ—¥ ä¸‹åˆ4:10:22 
+* ç±»è¯´æ˜ 
 * Given a 2D binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area.
 Example:
 Input: 
@@ -13,7 +13,7 @@ Input:
 
 Output: 4
 */
-public class _221_Maximal_Square_Çó¶şÎ»Êı×éÖĞµÄ×î´ó1Õı·½ĞÎ {
+public class _221_Maximal_Square_æ±‚äºŒä½æ•°ç»„ä¸­çš„æœ€å¤§1æ­£æ–¹å½¢ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

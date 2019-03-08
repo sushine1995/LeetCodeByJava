@@ -1,15 +1,15 @@
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê10ÔÂ9ÈÕ ÉÏÎç10:16:15 
-* ÀàËµÃ÷
-* Ëæ»úÒ»Ìâ
-//Ë¼Â·£º
- *Èç¹û×ÓÊ÷ÖÐÍ¬Ê±°üº¬ÁËpºÍq£¬ÄÇÃ´¸Ã½Úµã¾ÍÊÇLCA£»Èç¹û
- 	1. ·Ö±ðÔÚ×óÓÒ×ÓÊ÷ÖÐËÑË÷pºÍq£¬Èç¹û
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´10æœˆ9æ—¥ ä¸Šåˆ10:16:15 
+* ç±»è¯´æ˜Ž
+* éšæœºä¸€é¢˜
+//æ€è·¯ï¼š
+ *å¦‚æžœå­æ ‘ä¸­åŒæ—¶åŒ…å«äº†på’Œqï¼Œé‚£ä¹ˆè¯¥èŠ‚ç‚¹å°±æ˜¯LCAï¼›å¦‚æžœ
+ 	1. åˆ†åˆ«åœ¨å·¦å³å­æ ‘ä¸­æœç´¢på’Œqï¼Œå¦‚æžœ
 
-¸ø¶¨Ò»¸ö¶þ²æÊ÷, ÕÒµ½¸ÃÊ÷ÖÐÁ½¸öÖ¸¶¨½ÚµãµÄ×î½ü¹«¹²×æÏÈ¡£
-°Ù¶È°Ù¿ÆÖÐ×î½ü¹«¹²×æÏÈµÄ¶¨ÒåÎª£º¡°¶ÔÓÚÓÐ¸ùÊ÷ T µÄÁ½¸ö½áµã p¡¢q£¬×î½ü¹«¹²×æÏÈ±íÊ¾ÎªÒ»¸ö½áµã x£¬Âú×ã x ÊÇ p¡¢q µÄ×æÏÈÇÒ x µÄÉî¶È¾¡¿ÉÄÜ´ó£¨Ò»¸ö½ÚµãÒ²¿ÉÒÔÊÇËü×Ô¼ºµÄ×æÏÈ£©¡£¡±
-ÀýÈç£¬¸ø¶¨ÈçÏÂ¶þ²æÊ÷:  root = [3,5,1,6,2,0,8,null,null,7,4]
+ç»™å®šä¸€ä¸ªäºŒå‰æ ‘, æ‰¾åˆ°è¯¥æ ‘ä¸­ä¸¤ä¸ªæŒ‡å®šèŠ‚ç‚¹çš„æœ€è¿‘å…¬å…±ç¥–å…ˆã€‚
+ç™¾åº¦ç™¾ç§‘ä¸­æœ€è¿‘å…¬å…±ç¥–å…ˆçš„å®šä¹‰ä¸ºï¼šâ€œå¯¹äºŽæœ‰æ ¹æ ‘ T çš„ä¸¤ä¸ªç»“ç‚¹ pã€qï¼Œæœ€è¿‘å…¬å…±ç¥–å…ˆè¡¨ç¤ºä¸ºä¸€ä¸ªç»“ç‚¹ xï¼Œæ»¡è¶³ x æ˜¯ pã€q çš„ç¥–å…ˆä¸” x çš„æ·±åº¦å°½å¯èƒ½å¤§ï¼ˆä¸€ä¸ªèŠ‚ç‚¹ä¹Ÿå¯ä»¥æ˜¯å®ƒè‡ªå·±çš„ç¥–å…ˆï¼‰ã€‚â€
+ä¾‹å¦‚ï¼Œç»™å®šå¦‚ä¸‹äºŒå‰æ ‘:  root = [3,5,1,6,2,0,8,null,null,7,4]
         _______3______
        /              \
     ___5__          ___1__
@@ -17,35 +17,26 @@
    6      _2       0       8
          /  \
          7   4
-Ê¾Àý 1:
-ÊäÈë: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1
-Êä³ö: 3
-½âÊÍ: ½Úµã 5 ºÍ½Úµã 1 µÄ×î½ü¹«¹²×æÏÈÊÇ½Úµã 3¡£
-Ê¾Àý 2:
-ÊäÈë: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4
-Êä³ö: 5
-½âÊÍ: ½Úµã 5 ºÍ½Úµã 4 µÄ×î½ü¹«¹²×æÏÈÊÇ½Úµã 5¡£ÒòÎª¸ù¾Ý¶¨Òå×î½ü¹«¹²×æÏÈ½Úµã¿ÉÒÔÎª½Úµã±¾Éí¡£
-ËµÃ÷:
-ËùÓÐ½ÚµãµÄÖµ¶¼ÊÇÎ¨Ò»µÄ¡£
-p¡¢q Îª²»Í¬½ÚµãÇÒ¾ù´æÔÚÓÚ¸ø¶¨µÄ¶þ²æÊ÷ÖÐ¡£ 
-
+ç¤ºä¾‹ 1:
+è¾“å…¥: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1     è¾“å‡º: 3
+è§£é‡Š: èŠ‚ç‚¹ 5 å’ŒèŠ‚ç‚¹ 1 çš„æœ€è¿‘å…¬å…±ç¥–å…ˆæ˜¯èŠ‚ç‚¹ 3ã€‚
+ç¤ºä¾‹ 2:
+è¾“å…¥: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4     è¾“å‡º: 5
+è§£é‡Š: èŠ‚ç‚¹ 5 å’ŒèŠ‚ç‚¹ 4 çš„æœ€è¿‘å…¬å…±ç¥–å…ˆæ˜¯èŠ‚ç‚¹ 5ã€‚å› ä¸ºæ ¹æ®å®šä¹‰æœ€è¿‘å…¬å…±ç¥–å…ˆèŠ‚ç‚¹å¯ä»¥ä¸ºèŠ‚ç‚¹æœ¬èº«ã€‚
+è¯´æ˜Ž:
+æ‰€æœ‰èŠ‚ç‚¹çš„å€¼éƒ½æ˜¯å”¯ä¸€çš„ã€‚  pã€q ä¸ºä¸åŒèŠ‚ç‚¹ä¸”å‡å­˜åœ¨äºŽç»™å®šçš„äºŒå‰æ ‘ä¸­ã€‚ 
 */
-public class _236_Lowest_Common_Ancestor_Of_A_Binary_Tree_¶þ²æÊ÷µÄ×î½ü¹«¹²×æÏÈ {
-
+public class _236_Lowest_Common_Ancestor_Of_A_Binary_Tree_äºŒå‰æ ‘çš„æœ€è¿‘å…¬å…±ç¥–å…ˆ {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
 	}
-
 	 public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
 	     if (root == null || p == root || q == root) {
-	    	 return root;
-			
+	    	 return root;		
 		}   
-	     
+     
 	     TreeNode left = lowestCommonAncestor(root.left, p, q);
-	     TreeNode right = lowestCommonAncestor(root.right, p, q);
-	     
+	     TreeNode right = lowestCommonAncestor(root.right, p, q);	     
 		 
 		 return left!=null && right!= null ? root:(left!=null?left:right);
 	    }

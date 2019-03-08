@@ -5,7 +5,7 @@
  */
 /**
  * @author suzw
- * @version ´´½¨Ê±¼ä£º2018Äê9ÔÂ6ÈÕ ÏÂÎç3:14:08 ÀàËµÃ÷ £ºImplement a trie with insert, search,
+ * @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´9æœˆ6æ—¥ ä¸‹åˆ3:14:08 ç±»è¯´æ˜ ï¼šImplement a trie with insert, search,
  *          and startsWith methods. Example: Trie trie = new Trie();
  * 
  *          trie.insert("apple"); trie.search("apple"); // returns true
@@ -73,7 +73,7 @@ class Trie {
 	}
 }
 
-public class _208_ImplementTrie_PrefixTree_ÊµÏÖÇ°×ºÊ÷µÄinsertSearchStartwithÈı¸ö·½·¨ {
+public class _208_ImplementTrie_PrefixTree_å®ç°å‰ç¼€æ ‘çš„insertSearchStartwithä¸‰ä¸ªæ–¹æ³• {
 	public static void main(String[] args) {
 		String word = "apple";
 		String prefix = "apppleb";

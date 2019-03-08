@@ -5,9 +5,9 @@ import java.util.List;
 
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê9ÔÂ11ÈÕ ÏÂÎç8:52:12 
-* ÀàËµÃ÷ 
-* 212Ê¹ÓÃÇ°×ºÊ÷Trie½â´ğ£¬79Ê¹ÓÃ³£¹æ·½·¨
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´9æœˆ11æ—¥ ä¸‹åˆ8:52:12 
+* ç±»è¯´æ˜ 
+* 212ä½¿ç”¨å‰ç¼€æ ‘Trieè§£ç­”ï¼Œ79ä½¿ç”¨å¸¸è§„æ–¹æ³•
 * https://leetcode.com/problems/word-search-ii/discuss/59780/Java-15ms-Easiest-Solution-(100.00)
 * Intuitively, start from every cell and try to build a word in the dictionary. Backtracking (dfs) is the powerful way to exhaust every possible ways. Apparently, we need to do pruning when current character is not in any word.
 
@@ -24,7 +24,7 @@ No need to use O(n^2) extra space visited[m][n].
 No need to use StringBuilder. Storing word itself at leaf node is enough.
 No need to use HashSet to de-duplicate. Use "one time search" trie.
 */
-public class _212_Word_SearchII_µ¥´ÊËÑË÷ {
+public class _212_Word_SearchII_å•è¯æœç´¢ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -44,12 +44,12 @@ public List<String>	findWords(char[][] board, String[] words){
 
 public void dfs(char[][] board ,int i,int j,TrieNode p, List<String> res) {
 	char c = board[i][j];
-	//Åöµ½±ß½ç¡¢ÒÑ·ÃÎÊÊ±£¬·µ»Ø
+	//ç¢°åˆ°è¾¹ç•Œã€å·²è®¿é—®æ—¶ï¼Œè¿”å›
 	if (c == '#' || p.next[c - 'a'] == null) return;
 	p = p.next[c - 'a'];
 	
 	
-	if (p.word != null) {	//µ±ÕÒµ½Ò¶×Ó½Úµã¡¾Ò»¸öµ¥´Ê½áÊø¡¿£¬·Å½øList
+	if (p.word != null) {	//å½“æ‰¾åˆ°å¶å­èŠ‚ç‚¹ã€ä¸€ä¸ªå•è¯ç»“æŸã€‘ï¼Œæ”¾è¿›List
 		res.add(p.word);
 		p.word = null;
 	}

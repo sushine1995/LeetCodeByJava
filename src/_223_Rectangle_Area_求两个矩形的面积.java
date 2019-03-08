@@ -1,8 +1,8 @@
 
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê9ÔÂ19ÈÕ ÉÏÎç9:29:46 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´9æœˆ19æ—¥ ä¸Šåˆ9:29:46 
+* ç±»è¯´æ˜ 
 * Find the total area covered by two rectilinear rectangles in a 2D plane.
 Each rectangle is defined by its bottom left corner and top right corner as shown in the figure.
 [(A,B),(C,D)],[(E,F),(G,H)]
@@ -10,7 +10,7 @@ Example:
 Input: A = -3, B = 0, C = 3, D = 4, E = 0, F = -1, G = 9, H = 2
 Output: 45
 */
-public class _223_Rectangle_Area_ÇóÁ½¸ö¾ØĞÎµÄÃæ»ı {
+public class _223_Rectangle_Area_æ±‚ä¸¤ä¸ªçŸ©å½¢çš„é¢ç§¯ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -22,7 +22,7 @@ public class _223_Rectangle_Area_ÇóÁ½¸ö¾ØĞÎµÄÃæ»ı {
         int area1=(C-A)*(D-B);
         int area2=(G-E)*(H-F);
         int area =area1+area2;
-        //¼ÆËãÖØµş²¿·ÖµÄÃæ»ı
+        //è®¡ç®—é‡å éƒ¨åˆ†çš„é¢ç§¯
         int right = Math.min(C, G);
     	int top = Math.min(D, H);
     	int left = Math.max(A, E);

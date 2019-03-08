@@ -1,19 +1,21 @@
+import java.util.List;
+
 /**
  * 
  */
 /** 
 * @author  suzw
-* @version ����ʱ�䣺2018��9��6�� ����1:09:13 
-* ��˵�� 
+* @version 创建时间：2018年9月6日 下午1:09:13 
+* 类说明 
 */
 /*
 
 *@author: suzw
-*@date: 2018��9��6������1:09:26
+*@date: 2018年9月6日下午1:09:26
 *@TODO
 */
 
-public class _206_Reverse_Linked_List_��ת���� {
+public class _206_Reverse_Linked_List_反转链表 {
 	
 	/**
 	 * @param args
@@ -34,6 +36,33 @@ public class _206_Reverse_Linked_List_��ת���� {
 		a3.next=a4;
 		reverseList(a5);
 	}
+	
+	public ListNode reverse(ListNode head) {
+		ListNode pre,p,q;
+		//1. 将p指向head.next，再将head.next指向null -- >head反转后作为最后一个节点
+		p = head.next;
+		q = null;
+		pre = null;				//
+		head.next = null;
+		
+		//2. 将第二个指针p指向head,第三个p.next指向第二个p，以此类推，直到p或p.next==null
+		while(p!=null) {
+			pre = p.next;
+			p.next = q;
+			q = p;
+			p =pre;		
+		}
+		//一般的，head首元指针不存数据，只反转后面的节点，如果head也加入反转：
+		/*
+		 * 则1. 最开始的时候，q先等于head
+		 * q= head;
+		 * 2. 返回q节点
+		 */
+		head.next = q ;
+		return head;
+		
+		
+	}
 	public static ListNode reverseList(ListNode head) {
 
 		int length = getLinkedListLength(head);
@@ -42,13 +71,13 @@ public class _206_Reverse_Linked_List_��ת���� {
 		}
 		int[] listToInt = new int[length];
 		
-		//˳��ȡ��
+		//顺序取出
 		ListNode temp = head;
 		for (int i = 0; i < length; i++) {
 			listToInt[i] = temp.val;
 			temp = temp.next;
 		}
-		//�����Ż�ԭ����
+		//逆序存放回原链表
 		temp = head;
 		for (int i = 0; i <length; i++) {
 			temp.val = listToInt[length-i-1];
@@ -57,7 +86,6 @@ public class _206_Reverse_Linked_List_��ת���� {
 		}
 		printLinkedList(head);
 		return head;
-		
 	}
 	
 	

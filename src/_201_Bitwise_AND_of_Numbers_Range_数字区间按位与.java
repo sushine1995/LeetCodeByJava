@@ -1,19 +1,19 @@
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê9ÔÂ1ÈÕ ÉÏÎç10:46:15 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´9æœˆ1æ—¥ ä¸Šåˆ10:46:15 
+* ç±»è¯´æ˜ 
 * 
 * Input: [5,7]
 	Output: 4
 */
-public class _201_Bitwise_AND_of_Numbers_Range_Êı×ÖÇø¼ä°´Î»Óë {
+public class _201_Bitwise_AND_of_Numbers_Range_æ•°å­—åŒºé—´æŒ‰ä½ä¸ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int m = 5;
 		int n =7;
 		System.out.println(rangeBitwiseAnd(m, n));
-		_202_Happy_Number_µİ¹éÅĞ¶ÏÊÇ·ñÊÇhappyNumber.isHappy(m);
+		_202_Happy_Number_é€’å½’åˆ¤æ–­æ˜¯å¦æ˜¯happyNumber.isHappy(m);
 	}
 	
 	public static int rangeBitwiseAnd(int m,int n) {

@@ -2,37 +2,37 @@ import java.util.Arrays;
 
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê11ÔÂ7ÈÕ ÏÂÎç5:07:18 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´11æœˆ7æ—¥ ä¸‹åˆ5:07:18 
+* ç±»è¯´æ˜Ž 
 * 1. https://leetcode.com/problems/longest-increasing-subsequence/discuss/152065/Python-explain-the-O(nlogn)-solution-step-by-step
 * 2. https://leetcode.com/problems/longest-increasing-subsequence/discuss/74824/JavaPython-Binary-search-O(nlogn)-time-with-explanation
-* 3. ÔÚ2 µÄÏÂ·½£¬ÓÐ¶þ²æËÑË÷µÄ·½·¨
+* 3. åœ¨2 çš„ä¸‹æ–¹ï¼Œæœ‰äºŒå‰æœç´¢çš„æ–¹æ³•
 * 
-* ·½·¨Ò»£º ±©Á¦ËÑË÷£¬Ê±¼ä¸´ÔÓ¶ÈÊÇ2^n£¬·ÅÆú
-* ·½·¨¶þ£º DP£¬Ê±¼ä¸´ÔÓ¶Èn^2£¬32ms×óÓÒ
-* ·½·¨Èý£ºn*logn
-* 	ÎÒÃÇÏÈ½¨Á¢Ò»¸öÊý×é ends£¬°ÑÊ×ÔªËØ·Å½øÈ¥£¬È»ºó±È½ÏÖ®ºóµÄÔªËØ£¬
+* æ–¹æ³•ä¸€ï¼š æš´åŠ›æœç´¢ï¼Œæ—¶é—´å¤æ‚åº¦æ˜¯2^nï¼Œæ”¾å¼ƒ
+* æ–¹æ³•äºŒï¼š DPï¼Œæ—¶é—´å¤æ‚åº¦n^2ï¼Œ32mså·¦å³
+* æ–¹æ³•ä¸‰ï¼šn*logn
+* 	æˆ‘ä»¬å…ˆå»ºç«‹ä¸€ä¸ªæ•°ç»„ endsï¼ŒæŠŠé¦–å…ƒç´ æ”¾è¿›åŽ»ï¼Œç„¶åŽæ¯”è¾ƒä¹‹åŽçš„å…ƒç´ ï¼Œ
 
-	Èç¹û±éÀúµ½µÄÐÂÔªËØ±ÈendsÊý×éÖÐµÄÊ×ÔªËØÐ¡µÄ»°£¬Ìæ»»Ê×ÔªËØÎª´ËÐÂÔªËØ£¬
-	Èç¹û±éÀúµ½µÄÐÂÔªËØ±ÈendsÊý×éÖÐµÄÄ©Î²ÔªËØ»¹´óµÄ»°£¬½«´ËÐÂÔªËØÌí¼Óµ½endsÊý×éÄ©Î²(×¢Òâ²»¸²¸ÇÔ­Ä©Î²ÔªËØ)¡£
-	Èç¹û±éÀúµ½µÄÐÂÔªËØ±ÈendsÊý×éÊ×ÔªËØ´ó£¬±ÈÎ²ÔªËØÐ¡Ê±£¬´ËÊ±ÓÃ¶þ·Ö²éÕÒ·¨ÕÒµ½µÚÒ»¸ö²»Ð¡ÓÚ´ËÐÂÔªËØµÄÎ»ÖÃ£¬¸²¸ÇµôÎ»ÖÃµÄÔ­À´µÄÊý×Ö£¬
-ÒÔ´ËÀàÍÆÖ±ÖÁ±éÀúÍêÕû¸ö nums Êý×é£¬´ËÊ± ends Êý×éµÄ³¤¶È¾ÍÊÇÎÒÃÇÒªÇóµÄ LIS µÄ³¤¶È£¬ÌØ±ð×¢ÒâµÄÊÇ ends 
-Êý×éµÄÖµ¿ÉÄÜ²»ÊÇÒ»¸öÕæÊµµÄLIS£¬±ÈÈçÈôÊäÈëÊý×énumsÎª {4, 2£¬ 4£¬ 5£¬ 3£¬ 7}£¬ÄÇÃ´ËãÍêºóµÄendsÊý×éÎª
-{2£¬ 3£¬ 5£¬ 7}£¬¿ÉÒÔ·¢ÏÖËü²»ÊÇÒ»¸öÔ­Êý×éµÄLIS£¬Ö»ÊÇ³¤¶ÈÏàµÈ¶øÒÑ£¬Ç§ÍòÒª×¢ÒâÕâµã¡£
+	å¦‚æžœéåŽ†åˆ°çš„æ–°å…ƒç´ æ¯”endsæ•°ç»„ä¸­çš„é¦–å…ƒç´ å°çš„è¯ï¼Œæ›¿æ¢é¦–å…ƒç´ ä¸ºæ­¤æ–°å…ƒç´ ï¼Œ
+	å¦‚æžœéåŽ†åˆ°çš„æ–°å…ƒç´ æ¯”endsæ•°ç»„ä¸­çš„æœ«å°¾å…ƒç´ è¿˜å¤§çš„è¯ï¼Œå°†æ­¤æ–°å…ƒç´ æ·»åŠ åˆ°endsæ•°ç»„æœ«å°¾(æ³¨æ„ä¸è¦†ç›–åŽŸæœ«å°¾å…ƒç´ )ã€‚
+	å¦‚æžœéåŽ†åˆ°çš„æ–°å…ƒç´ æ¯”endsæ•°ç»„é¦–å…ƒç´ å¤§ï¼Œæ¯”å°¾å…ƒç´ å°æ—¶ï¼Œæ­¤æ—¶ç”¨äºŒåˆ†æŸ¥æ‰¾æ³•æ‰¾åˆ°ç¬¬ä¸€ä¸ªä¸å°äºŽæ­¤æ–°å…ƒç´ çš„ä½ç½®ï¼Œè¦†ç›–æŽ‰ä½ç½®çš„åŽŸæ¥çš„æ•°å­—ï¼Œ
+ä»¥æ­¤ç±»æŽ¨ç›´è‡³éåŽ†å®Œæ•´ä¸ª nums æ•°ç»„ï¼Œæ­¤æ—¶ ends æ•°ç»„çš„é•¿åº¦å°±æ˜¯æˆ‘ä»¬è¦æ±‚çš„ LIS çš„é•¿åº¦ï¼Œç‰¹åˆ«æ³¨æ„çš„æ˜¯ ends 
+æ•°ç»„çš„å€¼å¯èƒ½ä¸æ˜¯ä¸€ä¸ªçœŸå®žçš„LISï¼Œæ¯”å¦‚è‹¥è¾“å…¥æ•°ç»„numsä¸º {4, 2ï¼Œ 4ï¼Œ 5ï¼Œ 3ï¼Œ 7}ï¼Œé‚£ä¹ˆç®—å®ŒåŽçš„endsæ•°ç»„ä¸º
+{2ï¼Œ 3ï¼Œ 5ï¼Œ 7}ï¼Œå¯ä»¥å‘çŽ°å®ƒä¸æ˜¯ä¸€ä¸ªåŽŸæ•°ç»„çš„LISï¼Œåªæ˜¯é•¿åº¦ç›¸ç­‰è€Œå·²ï¼Œåƒä¸‡è¦æ³¨æ„è¿™ç‚¹ã€‚
 
-* ·½·¨ËÄ£º Ê¹ÓÃ¶þ·Ö²éÕÒÓÅ»¯£¬Ë¼Â·¸üÇåÎú£¬n*logn£¬1ms
-* ÉÏÃæÄÇÖÖ·½·¨ºÜÀàËÆ£¬Ë¼Â·ÊÇÏÈ½¨Á¢Ò»¸ö¿ÕµÄdpÊý×é£¬È»ºó¿ªÊ¼±éÀúÔ­Êý×é£¬¶ÔÓÚÃ¿Ò»¸ö±éÀúµ½µÄÊý×Ö£¬
-* ÎÒÃÇÓÃ¶þ·Ö²éÕÒ·¨ÔÚdpÊý×éÕÒµÚÒ»¸ö²»Ð¡ÓÚËüµÄÊý×Ö£¬Èç¹ûÕâ¸öÊý×Ö²»´æÔÚ£¬ÄÇÃ´Ö±½ÓÔÚdpÊý×éºóÃæ¼ÓÉÏ
-* ±éÀúµ½µÄÊý×Ö£¬Èç¹û´æÔÚ£¬Ôò½«Õâ¸öÊý×Ö¸üÐÂÎªµ±Ç°±éÀúµ½µÄÊý×Ö£¬×îºó·µ»ØdpÊý×ÖµÄ³¤¶È¼´¿É£¬×¢ÒâµÄÊÇ£¬
-* ¸úÉÏÃæµÄ·½·¨Ò»Ñù£¬ÌØ±ð×¢ÒâµÄÊÇdpÊý×éµÄÖµ¿ÉÄÜ²»ÊÇÒ»¸öÕæÊµµÄLIS¡£²Î¼û´úÂëÈçÏÂ£º
+* æ–¹æ³•å››ï¼š ä½¿ç”¨äºŒåˆ†æŸ¥æ‰¾ä¼˜åŒ–ï¼Œæ€è·¯æ›´æ¸…æ™°ï¼Œn*lognï¼Œ1ms
+* ä¸Šé¢é‚£ç§æ–¹æ³•å¾ˆç±»ä¼¼ï¼Œæ€è·¯æ˜¯å…ˆå»ºç«‹ä¸€ä¸ªç©ºçš„dpæ•°ç»„ï¼Œç„¶åŽå¼€å§‹éåŽ†åŽŸæ•°ç»„ï¼Œå¯¹äºŽæ¯ä¸€ä¸ªéåŽ†åˆ°çš„æ•°å­—ï¼Œ
+* æˆ‘ä»¬ç”¨äºŒåˆ†æŸ¥æ‰¾æ³•åœ¨dpæ•°ç»„æ‰¾ç¬¬ä¸€ä¸ªä¸å°äºŽå®ƒçš„æ•°å­—ï¼Œå¦‚æžœè¿™ä¸ªæ•°å­—ä¸å­˜åœ¨ï¼Œé‚£ä¹ˆç›´æŽ¥åœ¨dpæ•°ç»„åŽé¢åŠ ä¸Š
+* éåŽ†åˆ°çš„æ•°å­—ï¼Œå¦‚æžœå­˜åœ¨ï¼Œåˆ™å°†è¿™ä¸ªæ•°å­—æ›´æ–°ä¸ºå½“å‰éåŽ†åˆ°çš„æ•°å­—ï¼Œæœ€åŽè¿”å›ždpæ•°å­—çš„é•¿åº¦å³å¯ï¼Œæ³¨æ„çš„æ˜¯ï¼Œ
+* è·Ÿä¸Šé¢çš„æ–¹æ³•ä¸€æ ·ï¼Œç‰¹åˆ«æ³¨æ„çš„æ˜¯dpæ•°ç»„çš„å€¼å¯èƒ½ä¸æ˜¯ä¸€ä¸ªçœŸå®žçš„LISã€‚å‚è§ä»£ç å¦‚ä¸‹ï¼š
 --------------------- 
-×÷Õß£ºInside_Zhang 
-À´Ô´£ºCSDN 
-Ô­ÎÄ£ºhttps://blog.csdn.net/lanchunhui/article/details/51611970 
-°æÈ¨ÉùÃ÷£º±¾ÎÄÎª²©Ö÷Ô­´´ÎÄÕÂ£¬×ªÔØÇë¸½ÉÏ²©ÎÄÁ´½Ó£¡
+ä½œè€…ï¼šInside_Zhang 
+æ¥æºï¼šCSDN 
+åŽŸæ–‡ï¼šhttps://blog.csdn.net/lanchunhui/article/details/51611970 
+ç‰ˆæƒå£°æ˜Žï¼šæœ¬æ–‡ä¸ºåšä¸»åŽŸåˆ›æ–‡ç« ï¼Œè½¬è½½è¯·é™„ä¸Šåšæ–‡é“¾æŽ¥ï¼
 * 
 */
-public class _300_Longest_Increasing_Subsequence_×î³¤ÉÏÉý×ÓÐòÁÐ {
+public class _300_Longest_Increasing_Subsequence_æœ€é•¿ä¸Šå‡å­åºåˆ— {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -101,12 +101,12 @@ public class _300_Longest_Increasing_Subsequence_×î³¤ÉÏÉý×ÓÐòÁÐ {
         return low;
     }
     
-    //Ê¹ÓÃ DPËã·¨
+    //ä½¿ç”¨ DPç®—æ³•
     public  static int lengthOfLISBasicN2(int[] nums) {
     	int ans = 0;
     	int[] dp = new int[nums.length];
     	for (int i = 0;i<nums.length;i++) {
-    		dp[i] = 1;	//³õÊ¼»¯
+    		dp[i] = 1;	//åˆå§‹åŒ–
 			for (int j = 0 ;j<i;j++) 
 				if (nums[j]< nums[i]) 
 					dp[i] = Math.max(1 + dp[j], dp[i]);

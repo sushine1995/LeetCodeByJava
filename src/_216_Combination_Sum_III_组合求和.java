@@ -3,8 +3,8 @@ import java.util.List;
 
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê9ÔÂ13ÈÕ ÏÂÎç12:54:32 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´9æœˆ13æ—¥ ä¸‹åˆ12:54:32 
+* ç±»è¯´æ˜ 
 * Find all possible combinations of k numbers that add up to a number n, given that only numbers from 1 to 9 can be used and each combination should be a unique set of numbers.
 Note:
 All numbers will be positive integers.
@@ -16,7 +16,7 @@ Example 2:
 Input: k = 3, n = 9
 Output: [[1,2,6], [1,3,5], [2,3,4]]
 */
-public class _216_Combination_Sum_III_×éºÏÇóºÍ {
+public class _216_Combination_Sum_III_ç»„åˆæ±‚å’Œ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -34,11 +34,11 @@ public class _216_Combination_Sum_III_×éºÏÇóºÍ {
 	/*
 	
 	*@author: suzw
-	*@date: 2018Äê9ÔÂ13ÈÕÏÂÎç2:25:33
+	*@date: 2018å¹´9æœˆ13æ—¥ä¸‹åˆ2:25:33
 	*@TODO
-	*@param: k:×éºÏµÄ¸öÊı
-	*@param: n:Ä¿±êºÍ
-	*@position£º 
+	*@param: k:ç»„åˆçš„ä¸ªæ•°
+	*@param: n:ç›®æ ‡å’Œ
+	*@positionï¼š 
 	*/
 	public static void backTracking(List<List<Integer>> ret,List<Integer> list,int k,int n,int position) {
 		if(n<0 || list.size()>k) return;

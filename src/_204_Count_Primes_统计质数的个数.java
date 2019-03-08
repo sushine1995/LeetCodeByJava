@@ -1,20 +1,20 @@
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê9ÔÂ4ÈÕ ÏÂÎç1:14:15 
-* ÀàËµÃ÷ 
-* ¹Ø¼üµã: Ê¹ÓÃÉ¸Ñ¡·¨ÅĞ¶ÏÊÇ·ñÊÇËØÊı£¬Ê¹ÓÃÊı×é´æ´¢£¬³õÊ¼»¯Îªfalse
-* ¿ÉÒÔËõ¶ÌÊ±¼ä
-* ºó¸½ÁíÁ½ÖÖ·½·¨£º¿ìËÙ12ms£¬ÆÕÍ¨·½·¨-³¬Ê± 
-* ¿É²Î¿¼£ºhttps://www.2cto.com/kf/201805/743532.html
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´9æœˆ4æ—¥ ä¸‹åˆ1:14:15 
+* ç±»è¯´æ˜ 
+* å…³é”®ç‚¹: ä½¿ç”¨ç­›é€‰æ³•åˆ¤æ–­æ˜¯å¦æ˜¯ç´ æ•°ï¼Œä½¿ç”¨æ•°ç»„å­˜å‚¨ï¼Œåˆå§‹åŒ–ä¸ºfalse
+* å¯ä»¥ç¼©çŸ­æ—¶é—´
+* åé™„å¦ä¸¤ç§æ–¹æ³•ï¼šå¿«é€Ÿ12msï¼Œæ™®é€šæ–¹æ³•-è¶…æ—¶ 
+* å¯å‚è€ƒï¼šhttps://www.2cto.com/kf/201805/743532.html
 */
-public class _204_Count_Primes_Í³¼ÆÖÊÊıµÄ¸öÊı {
+public class _204_Count_Primes_ç»Ÿè®¡è´¨æ•°çš„ä¸ªæ•° {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println(countPrimes(10000));
 		
 	}
-	//É¸Ñ¡·¨
+	//ç­›é€‰æ³•
 	public static int  countPrimes(int n) {
 		int ans = 0;
 		boolean[] notPrime = new boolean[n];
@@ -30,7 +30,7 @@ public class _204_Count_Primes_Í³¼ÆÖÊÊıµÄ¸öÊı {
 		return ans;
 		
 	}
-		//leetcode-12msµÄ·½·¨
+		//leetcode-12msçš„æ–¹æ³•
 		public int countPrimesFast(int n) {
         
         /**
@@ -113,7 +113,7 @@ public class _204_Count_Primes_Í³¼ÆÖÊÊıµÄ¸öÊı {
         return c;
     }
 
-	//³£¹æ·½·¨£¬»á³¬Ê±
+	//å¸¸è§„æ–¹æ³•ï¼Œä¼šè¶…æ—¶
 	public static int countPrimesBasic(int n) {
 		int ans = 0;
 		int i = 2;

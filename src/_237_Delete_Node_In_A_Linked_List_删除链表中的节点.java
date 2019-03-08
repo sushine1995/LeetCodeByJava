@@ -1,7 +1,7 @@
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê10ÔÂ15ÈÕ ÉÏÎç9:55:01 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´10æœˆ15æ—¥ ä¸Šåˆ9:55:01 
+* ç±»è¯´æ˜Ž 
 * Write a function to delete a node (except the tail) in a singly linked list, given only access to that node.
 Given linked list -- head = [4,5,1,9], which looks like following:
     4 -> 5 -> 1 -> 9
@@ -21,7 +21,7 @@ All of the nodes' values will be unique.
 The given node will not be the tail and it will always be a valid node of the linked list.
 Do not return anything from your function.
 */
-public class _237_Delete_Node_In_A_Linked_List_É¾³ýÁ´±íÖÐµÄ½Úµã {
+public class _237_Delete_Node_In_A_Linked_List_åˆ é™¤é“¾è¡¨ä¸­çš„èŠ‚ç‚¹ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

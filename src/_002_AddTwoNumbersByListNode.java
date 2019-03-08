@@ -1,8 +1,8 @@
 
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê4ÔÂ11ÈÕ ÉÏÎç11:33:38 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´4æœˆ11æ—¥ ä¸Šåˆ11:33:38 
+* ç±»è¯´æ˜Ž 
 */
 
 public class _002_AddTwoNumbersByListNode {
@@ -74,8 +74,8 @@ public class _002_AddTwoNumbersByListNode {
 		temp = longList;
 		while(shortlist!=null) {
 			longList.val = shortlist.val+longList.val;
-			//½øÎ»²¿·Ö×¢ÊÍºó£¬ÔËÐÐÊ±¼ä±ä³¤
-			//µÚÒ»´Î½øÎ»
+			//è¿›ä½éƒ¨åˆ†æ³¨é‡ŠåŽï¼Œè¿è¡Œæ—¶é—´å˜é•¿
+			//ç¬¬ä¸€æ¬¡è¿›ä½
 			/*
 			if (longList.val>=10) {
 				if (longList.next==null) {
@@ -83,7 +83,7 @@ public class _002_AddTwoNumbersByListNode {
 				}
 				else {
 					longList.next.val+=1;
-					//Á¬ÐøÁ½´Î½øÎ»
+					//è¿žç»­ä¸¤æ¬¡è¿›ä½
 					if(longList.next.val>=10) {
 						if (longList.next.next==null) {
 							longList.next.next = new ListNode(1);

@@ -1,16 +1,16 @@
 /**
  * @author suzw
- * @version ´´½¨Ê±¼ä£º2018Äê10ÔÂ26ÈÕ ÏÂÎç2:56:25 ÀàËµÃ÷
- *          ¸ø¶¨Ò»Î»ÑÐ¾¿ÕßÂÛÎÄ±»ÒýÓÃ´ÎÊýµÄÊý×é£¨±»ÒýÓÃ´ÎÊýÊÇ·Ç¸ºÕûÊý£©¡£±àÐ´Ò»¸ö·½·¨£¬¼ÆËã³öÑÐ¾¿ÕßµÄ h Ö¸Êý¡£
+ * @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´10æœˆ26æ—¥ ä¸‹åˆ2:56:25 ç±»è¯´æ˜Ž
+ *          ç»™å®šä¸€ä½ç ”ç©¶è€…è®ºæ–‡è¢«å¼•ç”¨æ¬¡æ•°çš„æ•°ç»„ï¼ˆè¢«å¼•ç”¨æ¬¡æ•°æ˜¯éžè´Ÿæ•´æ•°ï¼‰ã€‚ç¼–å†™ä¸€ä¸ªæ–¹æ³•ï¼Œè®¡ç®—å‡ºç ”ç©¶è€…çš„ h æŒ‡æ•°ã€‚
  * 
- *          h Ö¸ÊýµÄ¶¨Òå: ¡°Ò»Î»ÓÐ h Ö¸ÊýµÄÑ§Õß£¬´ú±íËû£¨Ëý£©µÄ N ÆªÂÛÎÄÖÐÖÁ¶àÓÐ h ÆªÂÛÎÄ£¬·Ö±ð±»ÒýÓÃÁËÖÁÉÙ h ´Î£¬ÆäÓàµÄ N - h
- *          ÆªÂÛÎÄÃ¿Æª±»ÒýÓÃ´ÎÊý²»¶àÓÚ h ´Î¡£¡±
+ *          h æŒ‡æ•°çš„å®šä¹‰: â€œä¸€ä½æœ‰ h æŒ‡æ•°çš„å­¦è€…ï¼Œä»£è¡¨ä»–ï¼ˆå¥¹ï¼‰çš„ N ç¯‡è®ºæ–‡ä¸­è‡³å¤šæœ‰ h ç¯‡è®ºæ–‡ï¼Œåˆ†åˆ«è¢«å¼•ç”¨äº†è‡³å°‘ h æ¬¡ï¼Œå…¶ä½™çš„ N - h
+ *          ç¯‡è®ºæ–‡æ¯ç¯‡è¢«å¼•ç”¨æ¬¡æ•°ä¸å¤šäºŽ h æ¬¡ã€‚â€
  * 
- *          Ê¾Àý:
+ *          ç¤ºä¾‹:
  * 
- *          ÊäÈë: citations = [3,0,6,1,5] Êä³ö: 3 ½âÊÍ: ¸ø¶¨Êý×é±íÊ¾ÑÐ¾¿Õß×Ü¹²ÓÐ 5 ÆªÂÛÎÄ£¬Ã¿ÆªÂÛÎÄÏàÓ¦µÄ±»ÒýÓÃÁË
- *          3, 0, 6, 1, 5 ´Î¡£ ÓÉÓÚÑÐ¾¿ÕßÓÐ 3 ÆªÂÛÎÄÃ¿ÆªÖÁÉÙ±»ÒýÓÃÁË 3 ´Î£¬ÆäÓàÁ½ÆªÂÛÎÄÃ¿Æª±»ÒýÓÃ²»¶àÓÚ 3 ´Î£¬ËùÒÔËýµÄ h
- *          Ö¸ÊýÊÇ 3¡£ ËµÃ÷: Èç¹û h ÓÐ¶àÖÖ¿ÉÄÜµÄÖµ£¬h Ö¸ÊýÊÇÆäÖÐ×î´óµÄÄÇ¸ö¡£ 
+ *          è¾“å…¥: citations = [3,0,6,1,5] è¾“å‡º: 3 è§£é‡Š: ç»™å®šæ•°ç»„è¡¨ç¤ºç ”ç©¶è€…æ€»å…±æœ‰ 5 ç¯‡è®ºæ–‡ï¼Œæ¯ç¯‡è®ºæ–‡ç›¸åº”çš„è¢«å¼•ç”¨äº†
+ *          3, 0, 6, 1, 5 æ¬¡ã€‚ ç”±äºŽç ”ç©¶è€…æœ‰ 3 ç¯‡è®ºæ–‡æ¯ç¯‡è‡³å°‘è¢«å¼•ç”¨äº† 3 æ¬¡ï¼Œå…¶ä½™ä¸¤ç¯‡è®ºæ–‡æ¯ç¯‡è¢«å¼•ç”¨ä¸å¤šäºŽ 3 æ¬¡ï¼Œæ‰€ä»¥å¥¹çš„ h
+ *          æŒ‡æ•°æ˜¯ 3ã€‚ è¯´æ˜Ž: å¦‚æžœ h æœ‰å¤šç§å¯èƒ½çš„å€¼ï¼Œh æŒ‡æ•°æ˜¯å…¶ä¸­æœ€å¤§çš„é‚£ä¸ªã€‚ 
  *          https://leetcode.com/problems/h-index/discuss/70768/Java-bucket-sort-O(n)-solution-with-detail-explanation
  *          This type of problems always
  *          throw me off, but it just takes some getting used to. The idea
@@ -32,7 +32,7 @@
  *          buckets to contain how many papers have the corresponding index.
  *          Hope to image and explanation help.
  */
-public class _274_H_Index_HÒýÓÃÖ¸Êý {
+public class _274_H_Index_Hå¼•ç”¨æŒ‡æ•° {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

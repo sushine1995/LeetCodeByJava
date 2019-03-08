@@ -3,8 +3,8 @@ import java.util.Queue;
 
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê6ÔÂ4ÈÕ ÉÏÎç10:18:34 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´6æœˆ4æ—¥ ä¸Šåˆ10:18:34 
+* ç±»è¯´æ˜ 
 * 226. Invert Binary Tree
 * Invert a binary tree.
 Example:
@@ -21,13 +21,13 @@ Output:
  / \   / \
 9   6 3   1
 */
-public class _226_InvertBinaryTree_·­×ª¶ş²æÊ÷ {
+public class _226_InvertBinaryTree_ç¿»è½¬äºŒå‰æ ‘ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 	}
-	//½¨ÒéÊ¹ÓÃµİ¹é
+	//å»ºè®®ä½¿ç”¨é€’å½’
 	public static TreeNode invertTree(TreeNode root) {
 		Queue<TreeNode> queue = new LinkedList<>();
 		TreeNode temp =new TreeNode(0);

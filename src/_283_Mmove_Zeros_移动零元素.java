@@ -1,6 +1,6 @@
 /**
  * @author suzw
- * @version ´´½¨Ê±¼ä£º2018Äê10ÔÂ30ÈÕ ÏÂÎç2:07:06 ÀàËµÃ÷ Given an array nums, write a function
+ * @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´10æœˆ30æ—¥ ä¸‹åˆ2:07:06 ç±»è¯´æ˜ Given an array nums, write a function
  *          to move all 0's to the end of it while maintaining the relative
  *          order of the non-zero elements.
  * 
@@ -11,14 +11,14 @@
  *          You must do this in-place without making a copy of the array.
  *          Minimize the total number of operations.
  */
-public class _283_Mmove_Zeros_ÒÆ¶¯ÁãÔªËØ {
+public class _283_Mmove_Zeros_ç§»åŠ¨é›¶å…ƒç´  {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 	}
 
-	// 1ms£¬Ò»´Î±éÀú£¬Ò»Ö±½«·ÇÁãÔªËØÇ°ÒÆ£¬ºÍÁãÔªËØ½øĞĞ½»»»Î»ÖÃ¡£
+	// 1msï¼Œä¸€æ¬¡éå†ï¼Œä¸€ç›´å°†éé›¶å…ƒç´ å‰ç§»ï¼Œå’Œé›¶å…ƒç´ è¿›è¡Œäº¤æ¢ä½ç½®ã€‚
 	public void moveZeroes(int[] nums) {
 		if (nums == null || nums.length == 0) {
 			return;
@@ -35,7 +35,7 @@ public class _283_Mmove_Zeros_ÒÆ¶¯ÁãÔªËØ {
 		}
 	}
 
-	// ¸Ä½ø£ºÖ»ÓÃÒ»¸öforÑ­»·
+	// æ”¹è¿›ï¼šåªç”¨ä¸€ä¸ªforå¾ªç¯
 	public static void moveZeros(int[] nums) {
 		if (nums == null || nums.length <= 1)
 			return;

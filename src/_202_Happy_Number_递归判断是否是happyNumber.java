@@ -1,10 +1,10 @@
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê9ÔÂ1ÈÕ ÉÏÎç11:33:36 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´9æœˆ1æ—¥ ä¸Šåˆ11:33:36 
+* ç±»è¯´æ˜ 
 * 
 */
-public class _202_Happy_Number_µİ¹éÅĞ¶ÏÊÇ·ñÊÇhappyNumber {
+public class _202_Happy_Number_é€’å½’åˆ¤æ–­æ˜¯å¦æ˜¯happyNumber {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

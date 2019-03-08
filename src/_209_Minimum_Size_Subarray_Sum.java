@@ -1,7 +1,7 @@
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê9ÔÂ11ÈÕ ÉÏÎç11:09:10 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´9æœˆ11æ—¥ ä¸Šåˆ11:09:10 
+* ç±»è¯´æ˜ 
 */
 public class _209_Minimum_Size_Subarray_Sum {
 
@@ -27,7 +27,7 @@ public class _209_Minimum_Size_Subarray_Sum {
 		}
 		if (min ==Integer.MAX_VALUE) 	return 0;
 		return min;
-		//ÒÔÏÂÖ»Ñ¡³öÏàµÈµÄÇé¿ö
+		//ä»¥ä¸‹åªé€‰å‡ºç›¸ç­‰çš„æƒ…å†µ
 		/*
 		for (int i = 0; i < nums.length; i++) {
 			if (sum+nums[i]>s) {

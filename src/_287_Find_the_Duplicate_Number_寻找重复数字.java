@@ -1,9 +1,9 @@
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê10ÔÂ31ÈÕ ÉÏÎç10:41:02 
-* ÀàËµÃ÷ 
-* ²Î¿¼£ºLinked List  Circle i,ii,141-142
-* ½¨Òé¿´£ºhttps://blog.csdn.net/willduan1/article/details/50938210
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´10æœˆ31æ—¥ ä¸Šåˆ10:41:02 
+* ç±»è¯´æ˜ 
+* å‚è€ƒï¼šLinked List  Circle i,ii,141-142
+* å»ºè®®çœ‹ï¼šhttps://blog.csdn.net/willduan1/article/details/50938210
 * https://blog.csdn.net/monkeyduck/article/details/50439840
 * Linked List Circle2:https://blog.csdn.net/monkeyduck/article/details/40083527
 * Given an array nums containing n + 1 integers where each integer is between 1 and n (inclusive), prove that at least one duplicate number must exist. Assume that there is only one duplicate number, find the duplicate one.
@@ -24,7 +24,7 @@ Your runtime complexity should be less than O(n2).
 There is only one duplicate number in the array, but it could be repeated more than once.
 * 
 */
-public class _287_Find_the_Duplicate_Number_Ñ°ÕÒÖØ¸´Êı×Ö {
+public class _287_Find_the_Duplicate_Number_å¯»æ‰¾é‡å¤æ•°å­— {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -6,20 +6,20 @@ public class _001_FindTwoNumForATarget {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.print("ÊäÈëintÊı×éµÄ³¤¶È£º");
+		System.out.print("è¾“å…¥intæ•°ç»„çš„é•¿åº¦ï¼š");
 		Scanner s = new Scanner(System.in);
 		int lenOfInts = s.nextInt();
 		int[] a = new int[lenOfInts];
-		System.out.print("ÊäÈëintÊı×é£º");
+		System.out.print("è¾“å…¥intæ•°ç»„ï¼š");
 		for (int i = 0; i < a.length; i++) {
 			a[i] = s.nextInt();
 		}
-		System.out.print("ÊäÈëµÚ¶ş¸ö²ÎÊı");
+		System.out.print("è¾“å…¥ç¬¬äºŒä¸ªå‚æ•°");
 		int target = s.nextInt();
 		int []answer = new int[2];
 		_001_FindTwoNumForATarget test1 = new _001_FindTwoNumForATarget();
 		answer = test1.twoSum(a, target);
-		System.out.println("½á¹û"+answer[0]+","+answer[1]);
+		System.out.println("ç»“æœ"+answer[0]+","+answer[1]);
 	}
 	
     public int[] twoSum(int[] nums, int target) {

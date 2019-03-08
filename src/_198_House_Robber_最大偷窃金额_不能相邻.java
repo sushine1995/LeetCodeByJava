@@ -1,9 +1,9 @@
 /** 
 * @author  suzw
-* @version ����ʱ�䣺2018��9��12�� ����10:52:22 
-* ��˵�� :�Ա�213_��β�ķ�������
-* ����һ��רҵ��С͵���ƻ�͵���ؽֵķ��ݡ�ÿ�䷿�ڶ�����һ�����ֽ�Ӱ����͵�Ե�Ψһ��Լ���ؾ������ڵķ���װ���໥��ͨ�ķ���ϵͳ������������ڵķ�����ͬһ���ϱ�С͵���룬ϵͳ���Զ�������
-����һ������ÿ�����ݴ�Ž��ķǸ��������飬�������ڲ���������װ�õ�����£��ܹ�͵�Ե�����߽�
+* @version 创建时间：2018年9月12日 上午10:52:22 
+* 类说明 :对比213_首尾的房屋相邻
+* 你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。
+给定一个代表每个房屋存放金额的非负整数数组，计算你在不触动警报装置的情况下，能够偷窃到的最高金额。
 * Example 1:
 Input: [1,2,3,1]
 Output: 4
@@ -15,7 +15,7 @@ Output: 12
 Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1).
              Total amount you can rob = 2 + 9 + 1 = 12.
 */
-public class _198_House_Robber_���͵�Խ��_�������� {
+public class _198_House_Robber_最大偷窃金额_不能相邻 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

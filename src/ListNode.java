@@ -1,8 +1,8 @@
-package day1;
+
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê4ÔÂ11ÈÕ ÉÏÎç11:47:46 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´4æœˆ11æ—¥ ä¸Šåˆ11:47:46 
+* ç±»è¯´æ˜ 
 */
 public class ListNode {
 	     int val;

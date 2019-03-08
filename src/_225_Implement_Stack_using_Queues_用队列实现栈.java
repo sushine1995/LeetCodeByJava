@@ -3,8 +3,8 @@ import java.util.Queue;
 
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê9ÔÂ19ÈÕ ÉÏÎç10:31:10 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´9æœˆ19æ—¥ ä¸Šåˆ10:31:10 
+* ç±»è¯´æ˜Ž 
 * Implement the following operations of a stack using queues.
 push(x) -- Push element x onto stack.
 pop() -- Removes the element on top of the stack.
@@ -26,7 +26,7 @@ or deque (double-ended queue), as long as you use only standard operations of a 
 You may assume that all operations are valid (for example, no pop or top operations will be called on an 
 empty stack).
 */
-public class _225_Implement_Stack_using_Queues_ÓÃ¶ÓÁÐÊµÏÖÕ» {
+public class _225_Implement_Stack_using_Queues_ç”¨é˜Ÿåˆ—å®žçŽ°æ ˆ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -42,9 +42,9 @@ public class _225_Implement_Stack_using_Queues_ÓÃ¶ÓÁÐÊµÏÖÕ» {
 	    
 	    /** Push element x onto stack. */
 	    public void push(int x) {
-	    	//ÏÈ¼ÓÈë¶ÓÁÐµÄÄ©Î²£¬ÔÙ½«¶ÓÁÐµßµ¹Ë³Ðò[×îºóÌí¼ÓµÄÒ»¸öÔªËØ·ÅÔÚ¶ÓÊ×]
+	    	//å…ˆåŠ å…¥é˜Ÿåˆ—çš„æœ«å°¾ï¼Œå†å°†é˜Ÿåˆ—é¢ å€’é¡ºåº[æœ€åŽæ·»åŠ çš„ä¸€ä¸ªå…ƒç´ æ”¾åœ¨é˜Ÿé¦–]
 	        queue.add(x);
-	        //Èç[1],add2->[1,2]-¡· [2,1],add3->[2,1,3]->[1,3,2]->[3,2,1]
+	        //å¦‚[1],add2->[1,2]-ã€‹ [2,1],add3->[2,1,3]->[1,3,2]->[3,2,1]
 	        for (int i = 0; i < queue.size()-1; i++) {
 				queue.add(queue.poll());
 			}

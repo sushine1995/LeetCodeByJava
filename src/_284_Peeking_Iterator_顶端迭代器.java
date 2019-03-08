@@ -1,9 +1,9 @@
  /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê10ÔÂ30ÈÕ ÏÂÎç2:15:57 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´10æœˆ30æ—¥ ä¸‹åˆ2:15:57 
+* ç±»è¯´æ˜ 
 */
-public class _284_Peeking_Iterator_¶¥¶Ëµü´úÆ÷ {
+public class _284_Peeking_Iterator_é¡¶ç«¯è¿­ä»£å™¨ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

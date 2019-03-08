@@ -1,11 +1,11 @@
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê9ÔÂ11ÈÕ ÏÂÎç7:55:37 
-* ÀàËµÃ÷ 
-* µ¥´ÊËÑË÷
-* ²Î¿¼212£¬¿ÉÊ¹ÓÃÇ°×ºÊ÷TrieÇó½â
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´9æœˆ11æ—¥ ä¸‹åˆ7:55:37 
+* ç±»è¯´æ˜ 
+* å•è¯æœç´¢
+* å‚è€ƒ212ï¼Œå¯ä½¿ç”¨å‰ç¼€æ ‘Trieæ±‚è§£
 */
-public class _079_Word_Search_µ¥´ÊËÑË÷ {
+public class _079_Word_Search_å•è¯æœç´¢ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -27,17 +27,17 @@ public class _079_Word_Search_µ¥´ÊËÑË÷ {
 	/*
 	
 	*@author: suzw
-	*@date: 2018Äê9ÔÂ11ÈÕÏÂÎç7:57:11
+	*@date: 2018å¹´9æœˆ11æ—¥ä¸‹åˆ7:57:11
 	*@TODO
-	*@param: [y,x]£º char[][]¾ØÕóµÄÏÂ±ê
-	*@param: i,ÒÑ¾­Æ¥ÅäµÄ³¤¶È
+	*@param: [y,x]ï¼š char[][]çŸ©é˜µçš„ä¸‹æ ‡
+	*@param: i,å·²ç»åŒ¹é…çš„é•¿åº¦
 	*/
 	public static boolean exist(char[][] board, char[] word,int x,int y,int i) {
 		if (i == word.length) 
 			return true;
 		if(y<0 || x<0 || y==board.length ||x == board[y].length)	return false;
 		if(board[y][x]!=word[i])	return false;
-		board[y][x] ^= '#';			//Óë×ÔÉíÒì»ò£¬±ÜÃâ³öÏÖ»ØË·Ñ­»·
+		board[y][x] ^= '#';			//ä¸è‡ªèº«å¼‚æˆ–ï¼Œé¿å…å‡ºç°å›æœ”å¾ªç¯
 		boolean exist = exist(board, word, x+1, y, i+1) || exist(board, word, x-1, y, i+1) ||
 		exist(board, word, x, y+1, i+1) || exist(board, word, x, y-1, i+1) ;
 		board[y][x] ^= '#';

@@ -1,9 +1,9 @@
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê9ÔÂ20ÈÕ ÏÂÎç3:18:47 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´9æœˆ20æ—¥ ä¸‹åˆ3:18:47 
+* ç±»è¯´æ˜ 
 */
-public class _231_Power_Of_Two_ÊÇ·ñÊÇ2µÄÃİ {
+public class _231_Power_Of_Two_æ˜¯å¦æ˜¯2çš„å¹‚ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -33,7 +33,7 @@ public class _231_Power_Of_Two_ÊÇ·ñÊÇ2µÄÃİ {
 //        if (temp ==1) return true;
 //        else return false;
         if(n <= 0) return false;
-        while( n != 1) { // Ã»ÓĞµÃµ½×îÖÕ½á¹û
+        while( n != 1) { // æ²¡æœ‰å¾—åˆ°æœ€ç»ˆç»“æœ
            
             if(n % 2 != 0) return false; 
              n = n/2;

@@ -3,8 +3,8 @@ import java.util.List;
 
 /** 
 * @author  suzw
-* @version ´´½¨Ê±¼ä£º2018Äê9ÔÂ12ÈÕ ÏÂÎç6:52:17 
-* ÀàËµÃ÷ 
+* @version åˆ›å»ºæ—¶é—´ï¼š2018å¹´9æœˆ12æ—¥ ä¸‹åˆ6:52:17 
+* ç±»è¯´æ˜ 
 * Given a collection of distinct integers, return all possible permutations.
 Example:
 Input: [1,2,3]
@@ -18,7 +18,7 @@ Output:
   [3,2,1]
 ]
 */
-public class _046_Permutations_È«ÅÅÁĞ {
+public class _046_Permutations_å…¨æ’åˆ— {
 	public static void main(String[] args) {
 		int[] nums = {1,3,2};
 		System.out.println(permute(nums));
@@ -31,14 +31,14 @@ public class _046_Permutations_È«ÅÅÁĞ {
 		
 	}
 	public static void backtracking(List<List<Integer>> list,List<Integer> tempList,int[] nums) {
-		if (tempList.size() == nums.length) {//ÒÑ½«È«²¿ÊıÑ¡³ö£¬Âú×ãÌõ¼ş¼ÓÈë½á¹û¼¯£¬½áÊøµİ¹é
+		if (tempList.size() == nums.length) {//å·²å°†å…¨éƒ¨æ•°é€‰å‡ºï¼Œæ»¡è¶³æ¡ä»¶åŠ å…¥ç»“æœé›†ï¼Œç»“æŸé€’å½’
 			list.add(new ArrayList<>(tempList));
 		}else {
 			for (int i = 0; i < nums.length; i++) {
-				if (!tempList.contains(nums[i])) {// ÒÑ¾­Ñ¡¹ıµÄÊı²»ÔÙÑ¡
-					tempList.add(nums[i]); //Ñ¡Ôñµ±Ç°½Úµã
+				if (!tempList.contains(nums[i])) {// å·²ç»é€‰è¿‡çš„æ•°ä¸å†é€‰
+					tempList.add(nums[i]); //é€‰æ‹©å½“å‰èŠ‚ç‚¹
 					backtracking(list, tempList, nums);
-					tempList.remove(tempList.size()-1);//»ØËİµ½ÉÏÒ»²½£¬È¥µôµ±Ç°½Úµã
+					tempList.remove(tempList.size()-1);//å›æº¯åˆ°ä¸Šä¸€æ­¥ï¼Œå»æ‰å½“å‰èŠ‚ç‚¹
 				}
 			}
 		}
